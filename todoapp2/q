@@ -1,0 +1,9 @@
+                                    Table "public.todos"
+   Column    |       Type        | Collation | Nullable |              Default              
+-------------+-------------------+-----------+----------+-----------------------------------
+ id          | integer           |           | not null | nextval('todos_id_seq'::regclass)
+ description | character varying |           | not null | 
+ completed   | boolean           |           | not null | 
+Indexes:
+    "todos_pkey" PRIMARY KEY, btree (id)
+
